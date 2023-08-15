@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #111422;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#instagram,
+#twitter,
+#youtube,
+#facebook {
+  font-size: 6em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 1px 1px 1px #00000080, 5px 0.5px 6px #00000080,
+    1px 1px 5px #00000080, 1px 1px 2px #00000080, inset 1px 1px 5px #00000080,
+    inset 1px 1px 5px #00000080, inset 1px 1px 5px #00000080,
+    inset 1px 1px 5px #00000080;
+  border-radius: 20px;
+  padding: 8px 14px;
+  margin: 0 20px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 25px #0072ff, 0 0 50px #0072ff, 0 0 75px #0072ff,
+    0 0 100px #0072ff;
+}
+
+#instagram {
+  animation-delay: 0.1s;
+}
+#twitter {
+  animation-delay: 0.4s;
+}
+
+#facebook {
+  animation-delay: 1s;
+}
+
+#youtube {
+  animation-delay: 0.7s;
+}
+
+.fa:hover {
+  cursor: pointer;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.body1 {
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: right;
+  height: 40px;
+  background-color: #111422;
+}
+
+p {
+  top: 450px;
+  position: absolute;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 43px;
+  letter-spacing: 8px;
+  overflow: hidden;
+  background: linear-gradient(90deg, green, red, blue);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate-text 5s linear infinite;
+  -webkit-background-clip: text;
+  color: rgba(185, 357, 288, 0);
+}
+
+@keyframes animate-text {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
